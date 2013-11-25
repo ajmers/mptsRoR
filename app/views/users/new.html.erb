@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>ManPts: Get ManPts for your Antics</title>
+   
+   <%= render 'shared/header' %>
+    
+    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+    <script src="js/modernizr-2.5.3-min.js"></script>
+
+    <style type="text/css">
+
+    /*  THIS IS JUST TO GET THE GRID TO SHOW UP.  YOU DONT NEED THIS IN YOUR CODE */
+
+    #maincontent .col {
+        background: #ccc;
+        background: rgba(204, 204, 204, 0.85);
+
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="skiptomain"><a href="#maincontent">skip to main content</a></div>
+
+<div id="wrapper">
+    <div id="headcontainer">
+        <div class="section group">
+            <div class="col span_3_of_6">
+                <header>
+                <h1 class="right_align"><%= link_to 'ManPts', root_url %></h1>
+                <h3 class="right_align">Think you deserve ManPts?</h3>
+                <h3 class="right_align">Let your friends be the judges, and get real rewards.</h3>
+                </header>
+            </div>
+            <div class="col span_3_of_6">
+            <div id="signup">
+                        <form method="post" action="">
+                            <h3><label for="email">Email: </label></h3>
+                            <p><input type="text" name="email"></p>
+                            <h3><label for="password">Choose Password: </label></h3>
+                            <p><input type="password" name="password"></p>
+                            <h3><label for="password_conf">Confirm Password: </label></h3>
+                            <p><input type="password" name="password_conf"></p>
+                            <p><input type="submit" id="submit" class="mybutton" name="submit" value="Sign up"></p>
+
+                        </form>
+                    </div> <!--end login-->
+                <div class="left_align fb-login-button" autologoutlink="true" data-show-faces="true" data-width="200" data-max-rows="1"></div>
+            </div>
+        </div>
+    <div id="maincontentcontainer">
+        <div id="maincontent">
+
+
+
+
+        </div>
+    </div>
+    <%= render 'shared/footer' %>
+</div>
+
+
+
+    <!-- JavaScript at the bottom for fast page loading -->
+
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="js/selectivizr-min.js"></script>
+    <![endif]-->
+
+
+    <!-- More Scripts-->
+    <script src="js/responsivegridsystem.js"></script>
+    <script language="javascript"> 
+    function showForm() {
+        var ele = document.getElementById("signup_form");
+            ele.style.display = "block";
+        } 
+    </script>
+
+
+</body>
+</html>

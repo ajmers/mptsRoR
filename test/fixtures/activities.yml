@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyText
+  numTimesRanked: 1
+  avgScore: 9.99
+  user_id: 1
+
+two:
+  content: MyText
+  numTimesRanked: 1
+  avgScore: 9.99
+  user_id: 1
