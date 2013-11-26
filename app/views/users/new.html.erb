@@ -42,16 +42,7 @@
             </div>
             <div class="col span_3_of_6">
             <div id="signup">
-                        <form method="post" action="">
-                            <h3><label for="email">Email: </label></h3>
-                            <p><input type="text" name="email"></p>
-                            <h3><label for="password">Choose Password: </label></h3>
-                            <p><input type="password" name="password"></p>
-                            <h3><label for="password_conf">Confirm Password: </label></h3>
-                            <p><input type="password" name="password_conf"></p>
-                            <p><input type="submit" id="submit" class="mybutton" name="submit" value="Sign up"></p>
-
-                        </form>
+                <%= render 'signup' %>
                     </div> <!--end login-->
                 <div class="left_align fb-login-button" autologoutlink="true" data-show-faces="true" data-width="200" data-max-rows="1"></div>
             </div>
