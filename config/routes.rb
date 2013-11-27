@@ -16,6 +16,10 @@ ManPtsRor::Application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+  match '/signup', to: 'users#new',  via: 'get'
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'get'
 
   # Example resource route with options:
   #   resources :products do
