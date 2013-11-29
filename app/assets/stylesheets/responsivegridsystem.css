@@ -186,8 +186,11 @@ outline : 0;
 color : #dd2233;
 }
 
+.header a {
+	padding-right: 3%;
+}
 
-footer a { 
+footer a, .header a { 
 color : #ffffff;
 -webkit-transition: all 0.3s ease;
 -moz-transition: all 0.3s ease;
@@ -195,14 +198,15 @@ color : #ffffff;
 transition: all 0.3s ease;
 }
 
-footer a:visited { 
+footer a:visited, .header a:visited { 
 color : #fff; }
 
-footer a:focus { 
+footer a:focus, .header a:focus { 
 outline : thin dotted; 
 color : rgb(0,0,0); }
 
 footer a:hover, 
+footer a:active, .header a:hover, 
 footer a:active { 
 outline : 0;
 color : #fff;

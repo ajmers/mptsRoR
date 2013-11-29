@@ -4,6 +4,10 @@
 
 </head>
 
-<h2>Welcome <%= @user.email %>! </h2>
+<div class="header"> 
+	<%= link_to "Sign out", signout_path, method: "delete" %> 
+</div>
+
+<p>Welcome <%= @user.email %>! </p>
 
 <%= render 'shared/footer' %>
