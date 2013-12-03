@@ -118,6 +118,47 @@ a.mybutton:visited{
     width: 50%;
 }
 
+/* Inner content */
+.main_content {
+    background-color: white;
+}
+
+ul.right_nav li {
+    float:right;
+    list-style-type: none;
+    padding-right: 2%;
+}
+
+.left_nav {
+    background-color: white;
+}
+
+.left_nav_item h2 {
+    color: #C0C0C0;
+    text-align: right;
+}
+
+.left_nav_item {
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.get_points {
+    padding-top: 5%;
+    text-align: left;
+}
+
+
+.right_content {
+    color: white;
+}
+
+.bold {
+    font-weight: bolder;
+    color:black;
+}
+
 
 
 

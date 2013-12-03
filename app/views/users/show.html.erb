@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<head>
-	<%= render 'shared/header' %>
-
-</head>
-
+<% provide(:title, 'Welcome') %>
 <div class="header"> 
-	<%= link_to "Sign out", signout_path, method: "delete" %> 
+	<ul class="right_nav">
+		<li><%= link_to "Sign out", signout_path, method: "delete" %></li>		
+		<li><%= link_to @user.email, user_path, method: "get" %> </li>
+	</ul>
 </div>
 
-<p>Welcome <%= @user.email %>! </p>
+<div class = "main_content">
+	<%= render 'left_nav' %>
+</div>
 
 <%= render 'shared/footer' %>
