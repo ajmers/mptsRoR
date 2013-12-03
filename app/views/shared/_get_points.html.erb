@@ -1,0 +1,6 @@
+<%= form_for [@user, @user.activities.build] do |f| %>
+<h3><%= f.label :content %></h3>
+<p><%= f.text_field :content %></p>
+
+<%= f.submit "Submit my Activity", class: "mybutton" %>
+<% end %>

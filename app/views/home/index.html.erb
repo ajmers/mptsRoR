@@ -1,25 +1,4 @@
-
-<!DOCTYPE html>
-<head>
-    <%= render 'shared/header' %>
-    
-    <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
-    <script src="js/modernizr-2.5.3-min.js"></script>
-
-    <style type="text/css">
-
-    /*  THIS IS JUST TO GET THE GRID TO SHOW UP.  YOU DONT NEED THIS IN YOUR CODE */
-
-    #maincontent .col {
-        background: #ccc;
-        background: rgba(204, 204, 204, 0.85);
-    }
-
-    </style>
-
-</head>
-
-<body>
+<% provide(:title, 'ManPts.com') %>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -34,7 +13,7 @@
 <div id="wrapper">
     <div id="headcontainer">
         <div class="section group">
-            <%= render 'shared/leftTitle' %>
+            <%= render 'shared/left_title' %>
             <div class="col span_3_of_6">
                 <header id="right_side_header">
                     <h3 class="left_align">Submit your own Activities to get ManPts.</h3>
@@ -79,7 +58,3 @@
             ele.style.display = "block";
         } 
     </script>
-
-
-</body>
-</html>

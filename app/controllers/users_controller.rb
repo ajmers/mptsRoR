@@ -11,7 +11,7 @@ def create
 	if @user.save
 		sign_in @user
 		flash[:success] = "Welcome to ManPts!"
-		redirect_to @user
+		render "activities/index"
 	else
 		render 'new'
 	end
