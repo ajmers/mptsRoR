@@ -1,0 +1,18 @@
+<% provide(:title, 'Welcome') %>
+<div class="header"> 
+	<ul class="right_nav">
+		<li><%= link_to "Sign out", signout_path, method: "delete" %></li>
+		<li><%= link_to current_user.email, current_user %></li>		
+	</ul>
+</div>
+
+<div class = "main_content">
+	<%= render 'shared/left_nav' %>
+	<div class="col span_4_of_6 right_content">
+	<div class="get_points">
+		<%= render 'create_activity' %>
+	</div>
+</div>
+</div>
+
+<%= render 'shared/footer' %>
