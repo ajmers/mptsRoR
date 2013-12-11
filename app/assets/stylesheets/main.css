@@ -145,8 +145,18 @@ ul.right_nav li {
 }
 
 .get_points {
-    padding-top: 5%;
+    padding-top: 15px;
+    padding-left: 5%;
     text-align: left;
+    background-color:white;
+    width: 100%;
+}
+
+.get_points input[type=text] {
+    color: gray;
+    font-size: 16px;
+    font-style: italic;
+    padding-right: 0px;
 }
 
 
