@@ -14,12 +14,12 @@ class ActivitiesController < ApplicationController
 
 	def show
 		@user = current_user
-		@activities = @user.activities.paginate(page: params[:page])
+		@activities = @user.activities.paginate(page: params[:page], :per_page => 10)
 	end
 
 	def index
 		@user = current_user
-		@activities = @user.activities.paginate(page: params[:page])
+		@activities = @user.activities.paginate(page: params[:page], :per_page => 10)
 	end
 
 	private

@@ -167,8 +167,7 @@ ul.top_nav li a {
 
 .my_activities {
     position: relative;
-    padding-top: 15px;
-    padding-left: 5%;
+    padding: 15px;
     text-align: left;
     background-color:white;
     width: 100%;
