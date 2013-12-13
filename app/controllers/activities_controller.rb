@@ -13,8 +13,7 @@ class ActivitiesController < ApplicationController
 	end 
 
 	def show
-		@user = current_user
-		@activities = @user.activities.paginate(page: params[:page], :per_page => 10)
+		@activity = Activity.find(params[:id])
 	end
 
 	def index
