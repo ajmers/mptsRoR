@@ -123,10 +123,15 @@ a.mybutton:visited{
     background-color: white;
 }
 
-ul.right_nav li {
+ul.top_nav li {
     float:right;
     list-style-type: none;
     padding-right: 2%;
+    height: 22px;
+}
+
+ul.top_nav li a {
+    height: 22px;
 }
 
 .left_nav {
@@ -145,6 +150,7 @@ ul.right_nav li {
 }
 
 .get_points {
+    position: relative;
     padding-top: 15px;
     padding-left: 5%;
     text-align: left;
@@ -157,6 +163,26 @@ ul.right_nav li {
     font-size: 16px;
     font-style: italic;
     padding-right: 0px;
+}
+
+.my_activities {
+    position: relative;
+    padding-top: 15px;
+    padding-left: 5%;
+    text-align: left;
+    background-color:white;
+    width: 100%;
+}
+
+li.activity {
+    color:black;
+    display: block;
+    padding-bottom: 1%;
+}
+
+.timestamp {
+    color: #C0C0C0;
+    font-size: 12px;
 }
 
 

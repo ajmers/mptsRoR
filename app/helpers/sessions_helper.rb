@@ -5,7 +5,7 @@ module SessionsHelper
 		cookies.permanent[:remember_token] = remember_token
 		user.update_attribute(:remember_token, User.encrypt(remember_token))
 		self.current_user = user
-		redirect_to activities_url
+		redirect_to new_activity_url
 	end
 
 	def signed_in?

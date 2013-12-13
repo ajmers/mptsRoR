@@ -1,22 +1,25 @@
 class ActivitiesController < ApplicationController
 
 	def new
-		@activity = Activity.new
+		@activity = current_user.activities.new(params.permit(:content))
 	end
 
 	def create
 		@activity = current_user.activities.build(params.require(:activity).permit(:content))
 		if @activity.save
 			flash[:success] = "Activity created!"
-			redirect_to activities_path
+			redirect_to @activity
 		end
 	end 
 
 	def show
+		@user = current_user
+		@activities = @user.activities.paginate(page: params[:page])
 	end
 
 	def index
-		@activity = current_user.activities.new(params.permit(:content))
+		@user = current_user
+		@activities = @user.activities.paginate(page: params[:page])
 	end
 
 	private

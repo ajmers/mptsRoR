@@ -45,7 +45,7 @@ gem 'taps'
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
 
-gem 'rack-webconsole'
+gem "will_paginate"
 
 # Use unicorn as the app server
 # gem 'unicorn'
