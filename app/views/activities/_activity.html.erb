@@ -2,9 +2,6 @@
 	<li class="activity">
 		<span class="content"><%= activity.content %></span>
 		<span class="timestamp"><%= time_ago_in_words(activity.created_at) %> ago</span>
-		<% if @activities_to_rate %>
-			<%= render 'ratings/new' %>
-		<% end %>
 
 	</li>
 </ul>
