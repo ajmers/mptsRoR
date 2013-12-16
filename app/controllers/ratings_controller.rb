@@ -1,10 +1,13 @@
 class RatingsController < ApplicationController
 
 	def new
-		@rating = Rating.new
+		@activity = Activity.find(params[:activity_id])
+		@rating = @activity.ratings.create(params[:rating].permit(:rating))
 	end
 
 	def create
+		@activity = Activity.find(params[:activity_id])
+		@rating = @activity.ratings.create(params[:rating].permit(:rating))
 	end
 
 	def index
@@ -12,6 +15,5 @@ class RatingsController < ApplicationController
 
 	def show
 	end
-
 
 end

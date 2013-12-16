@@ -18,7 +18,11 @@ class ActivitiesController < ApplicationController
 
 	def index
 		@user = current_user
-		@activities = @user.activities.paginate(page: params[:page], :per_page => 10)
+		@activities = @user.activities.paginate(page: params[:page], :per_page => 10).order(created_at: :desc)
+	end
+
+	def not_rated
+		@activities_to_rate = Activity.not_rated(current_user).paginate(page: params[:page], :per_page => 10).order(created_at: :desc)
 	end
 
 	private

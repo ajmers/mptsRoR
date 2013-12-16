@@ -10,7 +10,7 @@
 			<h3> My Activities! (<%= @user.activities.count %>)</h3>
 			<% if @user.activities.any? %>
 				<%= render @activities %>
-			<%= will_paginate %>
+			<%= will_paginate @activities %>
 			<% end %>
 		</div>
 	</div>
