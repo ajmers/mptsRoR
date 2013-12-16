@@ -1,9 +1,9 @@
 class RemoveCreatorIdFromRatings < ActiveRecord::Migration
-  def down
+  def up
     remove_column :ratings, :creator_id
   end
 
-  def up
+  def down
   	add_column :ratings, :creator_id, :integer
   end
 end
