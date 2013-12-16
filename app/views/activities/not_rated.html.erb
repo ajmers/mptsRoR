@@ -1,0 +1,19 @@
+<% provide(:title, 'Welcome') %>
+<div class="header"> 
+	<%= render 'shared/top_nav' %>
+</div>
+
+<div class = "main_content">
+	<%= render 'shared/left_nav' %>
+	<div class="col span_4_of_6 right_content">
+		<div class="my_activities">
+			<h3> Rate Activities! (<%= @activities_to_rate.count %>)</h3>
+			<% if @activities_to_rate.any? %>
+				<%= render @activities_to_rate %>
+				<%= will_paginate @activities_to_rate %>
+				<% end %>
+		</div>
+	</div>
+</div>
+
+<%= render 'shared/footer' %>
