@@ -35,6 +35,8 @@ class ActivitiesController < ApplicationController
 		@rating = Rating.new
 	end
 
+
+
 	private
 
 		def activity_params

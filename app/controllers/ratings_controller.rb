@@ -8,11 +8,12 @@ class RatingsController < ApplicationController
 	end
 
 	def create
-		@rating = Rating.new(:rating =>params[:rating][:rating], :rater_id => current_user.id, :activity_id => params[:activity_id])
-		# @rating = Rating.new(:rating => params[:rating], :rater_id => params[:rater_id], :activity_id=>params[:activity_id])
+		activity_id = params[:activity_id]
+		@rating = Rating.new(:rating =>params[:rating][:rating], :rater_id => current_user.id, :activity_id => activity_id)
 		if @rating.save
 			flash[:success] = "Rating saved!"
-			redirect_to '/rate'
+			Activity.update_score_and_num_ratings(activity_id)
+			redirect_to rate_path
 		end
 	end
 

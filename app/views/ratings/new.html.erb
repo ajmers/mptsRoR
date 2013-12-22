@@ -9,7 +9,9 @@
 			<h3> Rate Activities!</h3>
 			<% if @activities.any? %>
 				<%= render partial: 'activity', locals: { activity: @activity } %>
-				<% end %>
+				<% else %>
+				<p class="empty"> Great job! You've rated all other users' activities! Wait a few minutes while we let the other users catch up! </p>
+			<% end %>
 	</div>
 </div>
 

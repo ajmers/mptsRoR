@@ -41,7 +41,7 @@
     color: #ccc;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
     border: 5px solid white; 
     width: 50%;
     font-size: 2em;
@@ -57,10 +57,6 @@ input[type=text] {
     padding: 8px;
     background: rgba(255,255,255,0.5);
     margin: 0 0 10px 0;
-}
-
-input[type=range] {
-
 }
 
 /*Buttons*/
@@ -272,7 +268,14 @@ ul.top_nav li a {
     width: 60%;
 }
 
+.empty {
+    padding: 10px;
+    margin: 20px;
+    border: 1px dotted gray;
+    width: 60%;
+    background-color: rosybrown;
 
+}
 
 .timestamp {
     color: gray;
