@@ -1,0 +1,16 @@
+<% provide(:title, 'Welcome') %>
+<div class="header"> 
+	<%= render 'shared/top_nav' %>
+</div>
+
+<div class = "main_content">
+	<%= render 'shared/left_nav' %>
+	<div class="col span_4_of_6 right_content">
+			<h3> Rate Activities!</h3>
+			<% if @activities.any? %>
+				<%= render partial: 'activity', locals: { activity: @activity } %>
+				<% end %>
+	</div>
+</div>
+
+<%= render 'shared/footer' %>

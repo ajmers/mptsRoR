@@ -1,0 +1,15 @@
+	<div class="activity">
+		<span class="content"><%= activity.content %></span>
+		<span class="timestamp"><%= time_ago_in_words(activity.created_at) %> ago</span>
+	</div>
+	<div class = "rating_form" >
+		<% unless activity.user_id === @user.id %>
+			<%= form_for ([activity, @rating]) do |f| %>
+				<p>Points: <%= f.range_field :rating, :in => -10..10 %></p>
+				<%= f.hidden_field :rater_id, :value => current_user.id %>
+				<%= f.hidden_field :activity_id, :value => activity.id %>
+				<%= f.submit "Rate!", class: "rateButton" %>
+			<% end %>
+		<% end %>
+	</div>
+</ul>
