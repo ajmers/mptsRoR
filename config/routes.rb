@@ -24,8 +24,8 @@ ManPtsRor::Application.routes.draw do
   match '/signup', to: 'users#new',  via: 'get'
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'
-  match '/rate', to: 'activities#not_rated', via: 'get'
-  match '/rate', to: 'activities#new', via: 'post'
+  match '/rate', to: 'ratings#new', via: 'get'
+  match '/rate', to: 'activities#index', via: 'post'
 
 
   # Example resource route with options:

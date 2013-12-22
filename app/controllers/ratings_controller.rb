@@ -1,16 +1,24 @@
 class RatingsController < ApplicationController
 
 	def new
-		@activity = Activity.find(params[:activity_id])
-		@rating = @activity.ratings.create(params[:rating].permit(:rating))
+		@user = current_user
+		@activities = Activity.not_rated(current_user).order(created_at: :desc)
+		@rating = Rating.new
 	end
 
 	def create
-		@activity = Activity.find(params[:activity_id])
-		@rating = @activity.ratings.create(params[:rating].permit(:rating))
+		@rating = Rating.new(:rating =>params[:rating][:rating], :rater_id => current_user.id, :activity_id => params[:activity_id])
+		# @rating = Rating.new(:rating => params[:rating], :rater_id => params[:rater_id], :activity_id=>params[:activity_id])
+		if @rating.save
+			flash[:success] = "Rating saved!"
+			redirect_to '/rate'
+		end
 	end
 
 	def index
+		@activities = Activity.not_rated(current_user).paginate(page: params[:page], :per_page => 10).order(created_at: :desc)
+		@activity = @activities.first
+		@rating = @activity.ratings.new()
 	end
 
 	def show

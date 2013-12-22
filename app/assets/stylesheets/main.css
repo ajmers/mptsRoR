@@ -173,6 +173,18 @@ ul.top_nav li a {
     width: 100%;
 }
 
+.rate_activities {
+    position: relative;
+    padding: 15px;
+    text-align: left;
+    background-color:white;
+    width: 100%;
+}
+
+form.new_rating {
+    
+}
+
 li.activity {
     color:black;
     display: block;

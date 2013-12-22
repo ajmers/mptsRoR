@@ -1,7 +1,7 @@
+<%= debug @activity %>
 <ul class = "activities" >
 	<li class="activity">
 		<span class="content"><%= activity.content %></span>
 		<span class="timestamp"><%= time_ago_in_words(activity.created_at) %> ago</span>
-
 	</li>
 </ul>

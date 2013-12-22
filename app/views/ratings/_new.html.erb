@@ -1,5 +1,0 @@
-<%= form_for([@activity, @activity.ratings.build, :url => '/rate') do |f| %>
-<p><%= f.text_field :rating%></p>
-
-<%= f.submit "Submit my Activity", class: "mybutton" %>
-<% end %>

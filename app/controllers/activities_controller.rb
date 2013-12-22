@@ -1,7 +1,7 @@
 class ActivitiesController < ApplicationController
 
 	def new
-		@activity = current_user.activities.new(params.permit(:content))
+		@activity = current_user.activities.new
 	end
 
 	def create
@@ -14,6 +14,7 @@ class ActivitiesController < ApplicationController
 
 	def show
 		@activity = Activity.find(params[:id])
+		@user = current_user
 	end
 
 	def index
@@ -22,7 +23,9 @@ class ActivitiesController < ApplicationController
 	end
 
 	def not_rated
-		@activities_to_rate = Activity.not_rated(current_user).paginate(page: params[:page], :per_page => 10).order(created_at: :desc)
+		@user = current_user
+		@activities = Activity.not_rated(current_user).paginate(page: params[:page], :per_page => 10).order(created_at: :desc)
+		@rating = Rating.new
 	end
 
 	private
