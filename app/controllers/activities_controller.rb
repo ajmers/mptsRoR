@@ -22,6 +22,13 @@ class ActivitiesController < ApplicationController
 		@activities = @user.activities.paginate(page: params[:page], :per_page => 10).order(created_at: :desc)
 	end
 
+	def destroy
+		@activity = Activity.find(params[:id])
+		@activity.destroy
+		redirect_to activities_path
+		
+	end
+
 	def not_rated
 		@user = current_user
 		@activities = Activity.not_rated(current_user).paginate(page: params[:page], :per_page => 10).order(created_at: :desc)

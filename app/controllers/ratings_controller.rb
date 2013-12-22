@@ -3,6 +3,7 @@ class RatingsController < ApplicationController
 	def new
 		@user = current_user
 		@activities = Activity.not_rated(current_user).order(created_at: :desc)
+		@activity = @activities.first
 		@rating = Rating.new
 	end
 
