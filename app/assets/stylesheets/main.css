@@ -4,11 +4,12 @@
     font-size: 0.6125em; /* 13 / 16 */
     max-width: 92.3em; /* 1200px / 13 */
     margin: 0 auto;
-    padding: 130px 0px 10px 0px;
+    padding: 30px 0px 10px 0px;
     position: relative;
     color: #000;
 }
-#login {
+
+#login, #signup {
     clear: both;
     width: 80%; /* 1000px / 1250px */
     font-size: 0.6125em; /* 13 / 16 */
@@ -256,10 +257,6 @@ ul.top_nav li a {
 .activity_content {
     float:left;
     width: 50%;
-}
-
-.right_content h3 {
-    padding: 20px;
 }
 
 .activity_points {
