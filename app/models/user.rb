@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
 	end
 
 	def self.update_user_points(user_id)
-		ranked_activities = Activity.where("user_id = :user_id AND numTimesRanked >= 1", {user_id: user_id})
+		ranked_activities = Activity.where('user_id = :user_id AND numTimesRanked >= 1', {user_id: user_id})
 		user_average = ranked_activities.average(:avgScore)
 		activity_creator = User.find(user_id)
 		activity_creator.update_attribute(:pointsWon, user_average)
