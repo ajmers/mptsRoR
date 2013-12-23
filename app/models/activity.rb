@@ -10,7 +10,7 @@ class Activity < ActiveRecord::Base
 		average = Rating.where(activity_id: activity_id).average(:rating)
 		count = Rating.where(activity_id: activity_id).count
 		activity = Activity.find(activity_id)
-		activity.update(:numTimesRanked => count, :avgScore => average)
+		activity.update(:num_times_ranked => count, :avg_score => average)
 	end
 
 end

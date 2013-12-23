@@ -2,8 +2,8 @@
 		<li><%= link_to "Sign out", signout_path, method: "delete" %></li>
 		<li><%= link_to current_user.email, current_user %></li>		
 		<li>points earned: 
-			<% if current_user.pointsWon.to_i != 0 %>
-			<%= current_user.pointsWon.round(1) %> </li>
+			<% if current_user.points_won.to_i != 0 %>
+			<%= current_user.points_won.round(1) %> </li>
 			<% else %> 0
 			<% end %>
 	</ul>

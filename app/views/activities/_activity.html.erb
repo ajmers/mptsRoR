@@ -10,8 +10,8 @@
 			<span class="timestamp"><%= time_ago_in_words(activity.created_at) %> ago</span>
 			<% end %>
 		</div>
-		<div class="activity_points"><% if activity.numTimesRanked.to_i >= 1 %>
-				<%= activity.avgScore %> 
+		<div class="activity_points"><% if activity.num_times_ranked.to_i >= 1 %>
+				<%= activity.avg_score %> 
 				<% else %>
 				<span class="pending">waiting for votes</span>
 				<% end %>

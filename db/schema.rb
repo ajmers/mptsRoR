@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131213195913) do
+ActiveRecord::Schema.define(version: 20131223044946) do
 
   create_table "activities", force: true do |t|
     t.text     "content"
-    t.integer  "numTimesRanked"
-    t.decimal  "avgScore"
+    t.integer  "num_times_ranked"
+    t.decimal  "avg_score"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -37,8 +37,8 @@ ActiveRecord::Schema.define(version: 20131213195913) do
 
   create_table "users", force: true do |t|
     t.string   "email"
-    t.decimal  "pointsWon"
-    t.decimal  "partipPoints"
+    t.decimal  "points_won"
+    t.decimal  "partic_points"
     t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
