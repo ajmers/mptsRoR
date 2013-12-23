@@ -1,7 +1,20 @@
 <ul class = "activities" >
-	<li class="activity">
-		<span class="content"><%= activity.content %></span>
-		<span class="timestamp"><%= time_ago_in_words(activity.created_at) %> ago</span>
-		<span class="delete"><%= link_to 'Delete', activity, method: :delete %></span>
+	<li class = "activity_item">
+		<div class = "activity_content">
+			<span class="delete"><%= link_to activity, method: :delete do %>
+				&#10006
+				<% end %> 
+			</span>
+			<%= link_to activity_path(activity.id) do %> 
+			<span class="content"><%= activity.content %><span>
+			<span class="timestamp"><%= time_ago_in_words(activity.created_at) %> ago</span>
+			<% end %>
+		</div>
+		<div class="activity_points"><% if activity.numTimesRanked >= 1 %>
+				<%= activity.avgScore %> 
+				<% else %>
+				<span class="pending">waiting for votes</span>
+				<% end %>
+		</div>
 	</li>
 </ul>

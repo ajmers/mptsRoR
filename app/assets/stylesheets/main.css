@@ -116,7 +116,7 @@ a.mybutton:visited{
 
 #rating_rating {
     height: 40px;
-    width: 65%;
+    width: 45%;
     /* IE10 Consumer Preview */ 
 background-image: -ms-linear-gradient(left, #E31507 0%, #086901 100%);
 
@@ -253,11 +253,25 @@ ul.top_nav li a {
     text-align: left;
 }
 
+.activity_content {
+    float:left;
+    width: 50%;
+}
+
 .right_content h3 {
     padding: 20px;
 }
 
-.activity {
+.activity_points {
+    float:right;
+    font-style: italic;
+}
+
+.pending {
+    font-style: italic;
+}
+
+.activity_to_rate {
     padding: 10px;
     color:black;
     display: block;
@@ -266,13 +280,35 @@ ul.top_nav li a {
     margin-left: 20px;
     border: 2px dotted gray;
     width: 60%;
+    overflow: auto;
+}
+
+
+.activity_item {
+    padding: 10px;
+    color:black;
+    display: block;
+    padding-bottom: 1%;
+    background-color: lightgray;
+    margin-left: 20px;
+    border: 2px dotted gray;
+    width: 80%;
+    overflow: auto;
+}
+
+li.activity_item {
+    list-style: none;
+}
+
+.activity .content {
+    width: 30%;
 }
 
 .empty {
     padding: 10px;
     margin: 20px;
     border: 1px dotted gray;
-    width: 60%;
+    width: 80%;
     background-color: rosybrown;
 
 }
@@ -283,6 +319,8 @@ ul.top_nav li a {
 }
 
 .delete {
+    padding-left: 10px;
+    font-size: 80%;
     color: #C0C0C0;
     float: right;
 }

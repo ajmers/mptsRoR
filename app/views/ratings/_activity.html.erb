@@ -1,6 +1,8 @@
-	<div class="activity">
+	<div class="activity_to_rate">
+		<div class="activity_content">
 		<span class="content"><%= activity.content %></span>
 		<span class="timestamp"><%= time_ago_in_words(activity.created_at) %> ago</span>
+		</div>
 	</div>
 	<div class = "rating_form" >
 		<% unless activity.user_id === @user.id %>
@@ -11,4 +13,3 @@
 			<% end %>
 		<% end %>
 	</div>
-</ul>
