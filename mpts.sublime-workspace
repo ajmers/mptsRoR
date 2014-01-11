@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"activ",
+				"activity_to_rate"
+			],
+			[
 				"relationships",
 				"relationships"
 			],
@@ -44,58 +48,34 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/users_controller.rb",
-			"settings":
-			{
-				"buffer_size": 478,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/layouts/application.html.erb",
-			"settings":
-			{
-				"buffer_size": 491,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/users/show.html.erb",
-			"settings":
-			{
-				"buffer_size": 384,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/users/_right_content.html.erb",
-			"settings":
-			{
-				"buffer_size": 120,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/shared/_get_points.html.erb",
-			"settings":
-			{
-				"buffer_size": 170,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/controllers/activities_controller.rb",
 			"settings":
 			{
-				"buffer_size": 203,
+				"buffer_size": 925,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/sessions_controller.rb",
+			"file": "app/models/user.rb",
 			"settings":
 			{
-				"buffer_size": 529,
+				"buffer_size": 774,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/activity.rb",
+			"settings":
+			{
+				"buffer_size": 557,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/ratings_controller.rb",
+			"settings":
+			{
+				"buffer_size": 860,
 				"line_ending": "Unix"
 			}
 		}
@@ -144,41 +124,80 @@
 	},
 	"file_history":
 	[
+		"/Users/Anne/Code/manPtsRor/app/controllers/sessions_controller.rb",
+		"/Users/Anne/Code/manPtsRor/app/controllers/ratings_controller.rb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/_activity.html.erb",
+		"/Users/Anne/Code/manPtsRor/config/initializers/rankings.rb",
+		"/Users/Anne/Code/manPtsRor/app/helpers/application_helper.rb",
+		"/Users/Anne/Code/manPtsRor/config/application.rb",
+		"/Users/Anne/Code/manPtsRor/app/views/shared/_top_nav.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/ratings/new.html.erb",
 		"/Users/Anne/Code/manPtsRor/app/assets/stylesheets/main.css",
-		"/Users/Anne/Code/manPtsRor/app/views/sessions/new.html.erb",
-		"/Users/Anne/Code/manPtsRor/app/controllers/application_controller.rb",
-		"/Users/Anne/Code/manPtsRor/app/views/users/_leftNav.html.erb",
+		"/Users/Anne/Code/manPtsRor/.git/rebase-merge/git-rebase-todo",
+		"/Users/Anne/Code/manPtsRor/app/views/ratings/_activity.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/models/activity.rb",
+		"/Users/Anne/Code/manPtsRor/app/models/user.rb",
+		"/Users/Anne/Code/manPtsRor/db/migrate/20131223044710_rename_num_times_ranked_column.rb",
+		"/Users/Anne/Code/manPtsRor/db/migrate/20131223044946_rename_columns.rb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/index.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/assets/stylesheets/responsivegridsystem.css",
+		"/Users/Anne/Code/manPtsRor/app/views/shared/_head.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/ratings/_create_rating.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/ratings/create.html.erb",
+		"/Users/Anne/Code/manPtsRor/config/routes.rb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/not_rated.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/_create_activity.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/controllers/users_controller.rb",
+		"/Users/Anne/Code/manPtsRor/app/models/rating.rb",
+		"/Users/Anne/Code/manPtsRor/db/migrate/20131213195913_remove_creator_id_from_ratings.rb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/_activity_to_rate.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/_form.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/_my_activity.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/helpers/sessions_helper.rb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/_unrated_activity.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/shared/_left_nav.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/ratings/index.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/helpers/ratings_helper.rb",
+		"/Users/Anne/Code/manPtsRor/app/helpers/activities_helper.rb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/show.html.erb",
+		"/Users/Anne/Code/manPtsRor/db/schema.rb",
+		"/Users/Anne/Code/manPtsRor/db/migrate/20131126051340_add_password_digest_to_users.rb",
+		"/Users/Anne/Code/manPtsRor/Gemfile",
+		"/Users/Anne/Code/manPtsRor/app/assets/javascripts/activities.js",
+		"/Users/Anne/Code/manPtsRor/db/migrate/20131213185950_create_ratings.rb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/_my_activities.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/new.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/users/show.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/assets/javascripts/activities.js.coffee",
+		"/Users/Anne/Code/manPtsRor/app/views/layouts/application.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/controllers/activities_controller.rb",
+		"/Users/Anne/Code/manPtsRor/app/views/users/index.html.erb",
 		"/Users/Anne/Code/manPtsRor/app/views/users/new.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/users/_right_content.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/activities/_right_content.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/shared/_create_activity.html.erb",
+		"/Users/Anne/Code/manPtsRor/mpts.sublime-workspace",
+		"/Users/Anne/Code/manPtsRor/app/views/shared/_get_points.html.erb",
+		"/Users/Anne/Code/manPtsRor/test/helpers/sessions_helper_test.rb",
+		"/Users/Anne/Code/manPtsRor/app/controllers/application_controller.rb",
 		"/Users/Anne/Code/manPtsRor/app/views/home/index.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/sessions/new.html.erb",
+		"/Users/Anne/Code/manPtsRor/app/views/users/_leftNav.html.erb",
 		"/Users/Anne/Code/manPtsRor/app/views/sessions/_login.html.erb",
 		"/Users/Anne/Code/manPtsRor/app/controllers/home_controller.rb",
-		"/Users/Anne/Code/manPtsRor/app/helpers/sessions_helper.rb",
-		"/Users/Anne/Code/manPtsRor/config/application.rb",
-		"/Users/Anne/Code/manPtsRor/db/schema.rb",
 		"/Users/Anne/Code/manPtsRor/db/migrate/20131129042131_add_remember_token_to_users.rb",
-		"/Users/Anne/Code/manPtsRor/app/controllers/sessions_controller.rb",
-		"/Users/Anne/Code/manPtsRor/config/routes.rb",
-		"/Users/Anne/Code/manPtsRor/app/assets/stylesheets/responsivegridsystem.css",
-		"/Users/Anne/Code/manPtsRor/app/views/users/show.html.erb",
 		"/Users/Anne/Code/manPtsRor/app/assets/stylesheets/activities.css.scss",
 		"/Users/Anne/Code/manPtsRor/app/assets/stylesheets/html5reset.css",
-		"/Users/Anne/Code/manPtsRor/app/models/user.rb",
-		"/Users/Anne/Code/manPtsRor/app/controllers/users_controller.rb",
 		"/Users/Anne/Code/manPtsRor/app/views/shared/_error_messages.html.erb",
-		"/Users/Anne/Code/manPtsRor/app/views/users/index.html.erb",
 		"/Users/Anne/Code/manPtsRor/db/migrate/20131128044049_add_index_to_users_email.rb",
-		"/Users/Anne/Code/manPtsRor/app/views/layouts/application.html.erb",
 		"/Users/Anne/Code/manPtsRor/app/assets/stylesheets/custom.css.sass",
 		"/Users/Anne/Code/manPtsRor/app/views/shared/_header.html.erb",
 		"/Users/Anne/Code/manPtsRor/app/views/shared/_leftTitle.html.erb",
 		"/Users/Anne/Code/manPtsRor/app/views/shared/_footer.html.erb",
 		"/Users/Anne/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/Anne/Code/manPtsRor/Gemfile",
-		"/Users/Anne/Code/manPtsRor/.git/rebase-merge/git-rebase-todo",
 		"/Users/Anne/Code/manPtsRor/app/views/users/_signup.html.erb",
 		"/Users/Anne/Code/manPtsRor/db/migrate/20131126044900_fix_column_name.rb",
 		"/Users/Anne/Code/manPtsRor/db/migrate/20131125050949_create_users.rb",
-		"/Users/Anne/Code/manPtsRor/app/models/activity.rb",
 		"/Users/Anne/Code/manPtsRor/config/database.yml",
 		"/Users/Anne/Dropbox/Code/blog/app/views/posts/show.html.erb",
 		"/Users/Anne/Dropbox/Code/blog/app/views/posts/index.html.erb",
@@ -232,46 +251,7 @@
 		"/Users/Anne/Desktop/RoR/blog/app/views/posts/new.html.erb",
 		"/Users/Anne/Desktop/RoR/blog/app/views/posts/edit.html.erb",
 		"/Users/Anne/Desktop/RoR/blog/config/application.rb",
-		"/Users/Anne/Desktop/RoR/blog/app/views/welcome/index.html.erb",
-		"/Users/Anne/Desktop/RoR/blog/config/initializers/strong_parameters.rb",
-		"/Users/Anne/Desktop/RoR/blog/Gemfile",
-		"/Users/Anne/Desktop/RoR/sample_app/app/controllers/users_controller.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/users/new.html.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/config/routes.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/config/initializers/secret_token.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/.gitignore",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/users/_unfollow.html.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/users/show.html.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/controllers/relationships_controller.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/relationships/destroy.js.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/users/show_follow.html.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/users/_follow.html.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/lib/tasks/sample_data.rake",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/shared/_stats.html.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/helpers/users_helper.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/users/_user.html.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/spec/requests/user_pages_spec.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/users/_unfollow_form.html.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/spec/requests/authentication_pages_spec.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/users/_follow_form.html.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/spec/requests/static_pages_spec.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/models/user.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/spec/models/relationship_spec.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/spec/models/user_spec.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/models/relationship.rb",
-		"/Users/Anne/Dropbox/Code/manpts/login.php",
-		"/Users/Anne/Dropbox/Code/manpts/classes/Activities.php",
-		"/Users/Anne/Dropbox/Code/Git/puzzle/puzzle.js",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/static_pages/home.html.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/assets/stylesheets/custom.css.scss",
-		"/Users/Anne/Desktop/RoR/sample_app/spec/factories.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/helpers/microposts_helper.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/db/migrate/20130702012936_create_relationships.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/controllers/microposts_controller.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/spec/requests/micropost_pages_spec.rb",
-		"/Users/Anne/Desktop/RoR/sample_app/.git/COMMIT_EDITMSG",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/shared/_feed.html.erb",
-		"/Users/Anne/Desktop/RoR/sample_app/app/views/microposts/_micropost.html.erb"
+		"/Users/Anne/Desktop/RoR/blog/app/views/welcome/index.html.erb"
 	],
 	"find":
 	{
@@ -290,6 +270,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"update_score_and_number_ratings",
+			"avgScore",
+			"numTimesRanked",
+			"create_remember_token",
+			"li {",
+			"content",
+			"mybutton",
+			"rating",
+			">\n",
+			"activity_params",
+			"activities_to_rate",
+			"gem \"will_paginate\"",
+			"right_nav",
+			"redirect_to 'activities",
+			"create_activity",
+			"get_points",
+			"current_user",
 			"remember_token",
 			"font-size",
 			"header",
@@ -350,23 +347,23 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/users_controller.rb",
+					"file": "app/controllers/activities_controller.rb",
 					"settings":
 					{
-						"buffer_size": 478,
+						"buffer_size": 925,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								472,
-								364
+								701,
+								701
 							]
 						],
 						"settings":
@@ -460,28 +457,29 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 141.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/layouts/application.html.erb",
+					"file": "app/models/user.rb",
 					"settings":
 					{
-						"buffer_size": 491,
+						"buffer_size": 774,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								113,
-								113
+								635,
+								635
 							]
 						],
 						"settings":
@@ -575,7 +573,8 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -585,18 +584,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/users/show.html.erb",
+					"file": "app/models/activity.rb",
 					"settings":
 					{
-						"buffer_size": 384,
+						"buffer_size": 557,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								336,
-								336
+								289,
+								289
 							]
 						],
 						"settings":
@@ -690,7 +689,8 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -700,363 +700,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/views/users/_right_content.html.erb",
+					"file": "app/controllers/ratings_controller.rb",
 					"settings":
 					{
-						"buffer_size": 120,
+						"buffer_size": 860,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								96,
-								96
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/views/shared/_get_points.html.erb",
-					"settings":
-					{
-						"buffer_size": 170,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								33,
-								33
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/controllers/activities_controller.rb",
-					"settings":
-					{
-						"buffer_size": 203,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								173,
-								173
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/controllers/sessions_controller.rb",
-					"settings":
-					{
-						"buffer_size": 529,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								115,
+								115
 							]
 						],
 						"settings":
@@ -1208,6 +863,214 @@
 		"selected_items":
 		[
 			[
+				"main.css",
+				"app/assets/stylesheets/main.css"
+			],
+			[
+				"responsive",
+				"app/assets/stylesheets/responsivegridsystem.css"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"not_rate",
+				"app/views/activities/not_rated.html.erb"
+			],
+			[
+				"model/act",
+				"app/models/activity.rb"
+			],
+			[
+				"model/rat",
+				"app/models/rating.rb"
+			],
+			[
+				"users_contr",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"activi/inde",
+				"app/views/activities/index.html.erb"
+			],
+			[
+				"not_rated",
+				"app/views/activities/not_rated.html.erb"
+			],
+			[
+				"head",
+				"app/views/shared/_head.html.erb"
+			],
+			[
+				"migrate/",
+				"db/migrate/20131213195913_remove_creator_id_from_ratings.rb"
+			],
+			[
+				"model/ac",
+				"app/models/activity.rb"
+			],
+			[
+				"models/ac",
+				"app/models/activity.rb"
+			],
+			[
+				"activity.rb",
+				"app/models/activity.rb"
+			],
+			[
+				"mo",
+				"app/models/rating.rb"
+			],
+			[
+				"ratings_contr",
+				"app/controllers/ratings_controller.rb"
+			],
+			[
+				"shared/left",
+				"app/views/shared/_left_nav.html.erb"
+			],
+			[
+				"views/shared/",
+				"app/views/shared/_left_nav.html.erb"
+			],
+			[
+				"model/acti",
+				"app/models/activity.rb"
+			],
+			[
+				"models/user",
+				"app/models/user.rb"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"activity.htm",
+				"app/views/activities/_activity.html.erb"
+			],
+			[
+				"activity.h",
+				"app/views/activities/_activity.html.erb"
+			],
+			[
+				"left_nav",
+				"app/views/shared/_left_nav.html.erb"
+			],
+			[
+				"activities/index",
+				"app/views/activities/index.html.erb"
+			],
+			[
+				"views/activ",
+				"app/views/activities/_create_activity.html.erb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"javascript/",
+				"app/assets/javascripts/activities.js.coffee"
+			],
+			[
+				"create_activ",
+				"app/views/activities/_create_activity.html.erb"
+			],
+			[
+				"create_acti",
+				"app/views/activities/_create_activity.html.erb"
+			],
+			[
+				"create_act",
+				"app/views/activities/_create_activity.html.erb"
+			],
+			[
+				"activities/new",
+				"app/views/activities/new.html.erb"
+			],
+			[
+				"activities/",
+				"app/views/activities/index.html.erb"
+			],
+			[
+				"layouts",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"sessions_contr",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"sessions_help",
+				"app/helpers/sessions_helper.rb"
+			],
+			[
+				"activities_con",
+				"app/controllers/activities_controller.rb"
+			],
+			[
+				"create",
+				"app/views/activities/_create_activity.html.erb"
+			],
+			[
+				"models/activ",
+				"app/models/activity.rb"
+			],
+			[
+				"sessions_con",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"controllers/users",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"users/index",
+				"app/views/users/index.html.erb"
+			],
+			[
+				"views/users/new",
+				"app/views/users/new.html.erb"
+			],
+			[
+				"create_activity",
+				"app/views/shared/_create_activity.html.erb"
+			],
+			[
+				"sessions_c",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"sessions_h",
+				"app/helpers/sessions_helper.rb"
+			],
+			[
+				"helper",
+				"test/helpers/sessions_helper_test.rb"
+			],
+			[
+				"views/shared/get",
+				"app/views/shared/_get_points.html.erb"
+			],
+			[
+				"application_con",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"get_points",
+				"app/views/shared/_get_points.html.erb"
+			],
+			[
+				"home/ind",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"config/routes",
+				"config/routes.rb"
+			],
+			[
 				"session",
 				"app/controllers/sessions_controller.rb"
 			],
@@ -1236,15 +1099,7 @@
 				"app/controllers/users_controller.rb"
 			],
 			[
-				"application_con",
-				"app/controllers/application_controller.rb"
-			],
-			[
 				"users",
-				"app/controllers/users_controller.rb"
-			],
-			[
-				"users_contr",
 				"app/controllers/users_controller.rb"
 			],
 			[
@@ -1280,10 +1135,6 @@
 				"app/controllers/sessions_controller.rb"
 			],
 			[
-				"routes",
-				"config/routes.rb"
-			],
-			[
 				"application_c",
 				"app/controllers/application_controller.rb"
 			],
@@ -1297,10 +1148,6 @@
 			],
 			[
 				"style",
-				"app/assets/stylesheets/responsivegridsystem.css"
-			],
-			[
-				"responsive",
 				"app/assets/stylesheets/responsivegridsystem.css"
 			],
 			[
@@ -1320,10 +1167,6 @@
 				"app/models/user.rb"
 			],
 			[
-				"models/user",
-				"app/models/user.rb"
-			],
-			[
 				"pplicationc",
 				"app/controllers/application_controller.rb"
 			],
@@ -1338,14 +1181,6 @@
 			[
 				"header",
 				"app/views/shared/_header.html.erb"
-			],
-			[
-				"main.css",
-				"app/assets/stylesheets/main.css"
-			],
-			[
-				"gemfile",
-				"Gemfile"
 			],
 			[
 				"gemf",
@@ -1493,7 +1328,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 255.0,
+	"side_bar_visible": true,
+	"side_bar_width": 260.0,
 	"status_bar_visible": true
 }
