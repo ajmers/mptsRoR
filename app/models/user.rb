@@ -10,19 +10,20 @@ class User < ActiveRecord::Base
 	
 	has_many :activities, dependent: :destroy
 
-	def User.new_remember_token
+	def self.new_remember_token
 		SecureRandom.urlsafe_base64
 	end
 
-	def User.encrypt(token)
+	def self.encrypt(token)
 		Digest::SHA1.hexdigest(token.to_s)
 	end
 
-	def self.update_user_points(user_id)
-		ranked_activities = Activity.where("user_id = :user_id AND num_times_ranked >= 1", {user_id: user_id})
-		user_average = ranked_activities.average(:avg_score)
-		activity_creator = User.find(user_id)
-		activity_creator.update_attribute(:points_won, user_average)
+	def update_user_points!
+	  update(points_won: activities.where("num_times_ranked >= 1").average(:avg_score))
+	end
+
+	def not_rated_activities
+		where("user_id !=? AND NOT EXISTS (SELECT 1 FROM ratings WHERE ratings.activity_id = activities.id AND ratings.rater_id = ?", user, user)
 	end
 
 	private
