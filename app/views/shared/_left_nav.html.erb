@@ -1,13 +1,18 @@
 <div class="col span_2_of_6 left_nav">
+	<%= link_to activities_path do %>
 	<div class="left_nav_item">
-		<h2><span class="bold"><%= link_to "My", activities_path %></span> Pts </h2>
+		<h2><span class="bold">My</span> Pts </h2>
 	</div>
-
+	<% end %>
+	
+	<%= link_to rate_path do %>
 	<div class="left_nav_item">
-		<h2> <span class="bold"><%= link_to "Give", rate_path %></span> Pts </h2>
+		<h2> <span class="bold">Give</span> Pts </h2>
 	</div>
-
+	<% end %>
+	<%= link_to new_activity_path do %>
 	<div class="left_nav_item">
-		<h2><span class="bold"><%= link_to "Get", new_activity_path %></span> Pts </h2>
+		<h2><span class="bold">Get</span> Pts </h2>
 	</div>
+	<% end %>
 </div>

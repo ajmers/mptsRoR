@@ -46,6 +46,10 @@ gem 'taps'
 gem 'bcrypt-ruby', '~> 3.1.2'
 
 gem "will_paginate"
+gem 'devise'
+group :development, :test do
+ gem 'foreman'
+end
 
 # Use unicorn as the app server
 # gem 'unicorn'

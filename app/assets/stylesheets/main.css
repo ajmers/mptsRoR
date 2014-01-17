@@ -220,14 +220,21 @@ ul.top_nav li a {
 }
 
 .left_nav_item h2 {
-    color: #C0C0C0;
+    background-color: #92c978;
+    border: 2px dotted black;
+    padding: 20px;
+    color: white;
     text-align: right;
 }
 
 .left_nav_item {
-    padding-top: 5%;
+    width: 70%;
+    float:right;
     padding-right: 5%;
-    padding-bottom: 5%;
+}
+
+.left_nav_item h2:hover {
+    background-color: #4aa61f;
 }
 
 .get_points {
@@ -336,7 +343,7 @@ li.activity_item {
 
 .bold {
     font-weight: bolder;
-    color:black;
+    color:#163109;
 }
 
 .rating_form {
