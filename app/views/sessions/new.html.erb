@@ -7,6 +7,11 @@
 			<%= render 'shared/left_title' %>
 			<div class="col span_3_of_6">
 				<div id="login">
+					<% flash.each do |key, value | %>
+ 		 			<div class = "alert alert-<%= key %> invalidLogin">
+   		 			<h3><%= value %></h3>
+   		 		</div>
+  				<% end %>
 					<%= render 'login' %>
 				</div>
 			</div>

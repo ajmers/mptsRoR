@@ -20,6 +20,18 @@
     color: #000;
 }
 
+.invalidLogin {
+    background-color: #FF9999;
+    border: 2px dotted red;
+    top: 10%;
+    clear: both;
+    width: 55%; /* 1000px / 1250px */
+    max-width: 92.3em; /* 1200px / 13 */
+    margin: 0 auto;
+    position: absolute;
+    color: #000;
+}
+
 .right_align{
     text-align:right;
     }
