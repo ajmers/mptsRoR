@@ -1,0 +1,62 @@
+#toptitle {
+    background-color: green;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 200;
+    display: none;
+}
+
+#headcontainer {
+    z-index: -1;
+}
+
+.details.odd {
+	padding-bottom: 2%;
+	padding-top: 2%;
+	background-color: green;
+	color: white;
+}
+
+.details img {
+	border: 3px solid black;
+	max-width: 100%;
+}
+
+.details.even {
+	padding-bottom: 2%;
+	padding-top: 2%;
+	background-color: white;
+	color: black;
+}
+
+#radioButtons {
+	text-align: left;
+	margin-left:20%;
+	display: inline;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label {
+	font-size: 80px;
+	width: 80px;
+	display: inline;
+}
+
+.circle {
+	height:100px;
+	width:100px;
+	border-radius: 20px;
+	background-color:red;
+}
+
+.negative {
+	color: red;
+	background-color:red;
+	border-radius: 20px;
+}
+
