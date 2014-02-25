@@ -5,7 +5,7 @@
 $(window).scroll(function() {
 	console.log('scrolling');
 	var $toptitle = $('#toptitle');
-    if ($(this).scrollTop()>150)
+    if ($(this).scrollTop()>180)
      {
         $toptitle.fadeIn();
      }

@@ -1,6 +1,6 @@
 #toptitle {
-    background-color: green;
-    height: 100px;
+    background-color: #47A347;
+    height: 50px;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -8,27 +8,46 @@
     display: none;
 }
 
+#toptitle img {
+	height: 100%
+}
+
 #headcontainer {
     z-index: -1;
 }
 
-.details.odd {
-	padding-bottom: 2%;
-	padding-top: 2%;
-	background-color: green;
-	color: white;
+img.screenshot {
+    margin: 3%;
 }
 
-.details img {
-	border: 3px solid black;
-	max-width: 100%;
+.details_item {
+	height: 300px;
+	width: 100%;
+	position: relative;
 }
 
-.details.even {
-	padding-bottom: 2%;
-	padding-top: 2%;
-	background-color: white;
-	color: black;
+.details_item.odd {
+	background-color: gray;
+}
+
+.details_item .details_left, .details_item .details_right {
+	float: left;
+}
+
+.details_item h4 {
+	padding: 3%;
+}
+
+.details_item .narrow {
+	width: 40%;
+}
+
+.details_item .wide {
+	width: 60%;
+}
+
+.details_item h4.description {
+	margin-bottom: 2%;
 }
 
 #radioButtons {
