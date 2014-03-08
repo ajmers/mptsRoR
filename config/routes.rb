@@ -1,5 +1,4 @@
 ManPtsRor::Application.routes.draw do
-  devise_for :users
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -16,19 +15,26 @@ ManPtsRor::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  devise_for :users, :controllers => { :sessions => :sessions }
+
+  devise_scope :users do 
+    get       "login",          :to => "users/sessions#new" 
+    post      "login",          :to => "users/sessions#create" 
+    delete    "logout",         :to => "users/sessions#destroy" 
+    get       "session",        :to => "users/sessions#show" 
+  end 
+
   resources :users 
   resources :sessions, only: [:new, :create, :destroy]
   resources :activities do
     resources :ratings
   end
-  
+
   match '/signup', to: 'users#new',  via: 'get'
-  match '/signin', to: 'sessions#new', via: 'get'
-  match '/signout', to: 'sessions#destroy', via: 'delete'
+#  match '/signout', to: 'sessions#destroy', via: 'delete'
   match '/rate', to: 'ratings#new', via: 'get'
   match '/rate', to: 'activities#index', via: 'post'
-  match '/stars', to: 'home#rating', via: 'get'
-
+  #match '/stars', to: 'home#rating', via: 'get'
 
   # Example resource route with options:
   #   resources :products do

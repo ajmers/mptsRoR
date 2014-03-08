@@ -7,6 +7,7 @@ def new
 end
 
 def create
+	super
 	@user = User.new(user_params)
 	if @user.save
 		sign_in @user

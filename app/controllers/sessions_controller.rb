@@ -1,4 +1,4 @@
-class SessionsController < ApplicationController
+class SessionsController < Devise::SessionsController
 	skip_before_filter :require_login
 	layout 'sessions_layout'
 
@@ -6,6 +6,7 @@ def new
 end
 
 def create
+	logger.info "Attempt to sign in by { params[:user][:email] }"
 	user = User.find_by(email: params[:session][:email].downcase)
 	if user && user.authenticate(params[:session][:password])
 		user.update_user_points!
